@@ -13,3 +13,4 @@ export class MenuSideBar {
     }
 
 }
+export default new MenuSideBar();
