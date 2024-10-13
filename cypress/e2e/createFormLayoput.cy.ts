@@ -1,10 +1,8 @@
-import { MenuSideBar } from "../support/pages/menu"
-import { FormLayoutPage } from "../support/pages/formLayout"
+import menu, { MenuSideBar } from "../support/pages/menu"
+import formLayoutPage, { FormLayoutPage } from "../support/pages/formLayout"
 
 describe ('Creare FormLayout', () => {
 
-    const menu = new MenuSideBar()
-    const formLayoutPage = new FormLayoutPage()
 
     beforeEach(() => {
         // Set the window size before each test
@@ -33,15 +31,20 @@ describe ('Creare FormLayout', () => {
         formLayoutPage.selectCheckboxBasicForm();
 
         // Form without labels
+        formLayoutPage.enterRecipients('Recipient Test');
+        formLayoutPage.enterSubject('Test Subject');
+        formLayoutPage.enterMessage('Test Message');
 
+        // Block form
+        formLayoutPage.enterFirstNameBlockForm('Test1');
+        formLayoutPage.enterLastNameBlockForm('Lastname');
+        formLayoutPage.enterEmailBlockForm('testemail@email.com');
+        formLayoutPage.enterWebSiteBlockForm('google.com');
 
-
-
-        
-
-
-       
-
+        // Horizontal form
+        formLayoutPage.enterEmailHorizontalForm('test3@email.com');
+        formLayoutPage.enterPasswordHorizontalForm('QWERTY');
+        formLayoutPage.checkCheckboxHorizontalForm();
 
 
     })
