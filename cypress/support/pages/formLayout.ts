@@ -2,7 +2,7 @@ export class FormLayoutPage {
 
     inputFieldName = '//form[@class="form-inline ng-untouched ng-pristine ng-valid"]//input[@class="input-full-width size-medium status-basic shape-rectangle nb-transition"][1]'
     inputFieldEmail = '//form[@class="form-inline ng-untouched ng-pristine ng-valid"]//input[@class="input-full-width size-medium status-basic shape-rectangle nb-transition"][2]'
-    
+
     // Grid form
     inputEmailGrid = '//input[@id="inputEmail1"]'
     inputFieldPaswordGrid = '//input[@id="inputPassword2"]'
@@ -95,4 +95,5 @@ export class FormLayoutPage {
 }
 
 export default new FormLayoutPage();
+
 
