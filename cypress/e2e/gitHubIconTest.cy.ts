@@ -1,8 +1,6 @@
-import {Header} from '../support/pages/header'
+import header, {Header} from '../support/pages/header'
 
 describe ('GitHub Icon Test', () => {
-
-    const header = new Header()
 
     beforeEach(() => {
         // Set the window size before each test
@@ -13,7 +11,7 @@ describe ('GitHub Icon Test', () => {
 
     it ('GitHub Icon Test', () => {
 
-        header.findGitHubText().should('have.text', 'Star')
+        header.findGitHubText().should('have.text', 'Star');
         
     })
 
