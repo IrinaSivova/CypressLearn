@@ -1,4 +1,8 @@
-describe ('Load Toast With Characters', () => {
+
+import menuSideBar, { MenuSideBar } from "../support/pages/menu";
+import smartTable, { SmartTable } from "../support/pages/smartTable";
+
+describe ('Change Table Data Test', () => {
 
     beforeEach(() => {
         // Set the window size before each test
@@ -8,8 +12,15 @@ describe ('Load Toast With Characters', () => {
       });
 
     it ('Change Table Data', () => {
-
-
+      
+      menuSideBar.selectMenuTableAndData();
+      menuSideBar.selectMenySmartTable();
+      smartTable.getThirdRow().within ( () => {
+        smartTable.openEditMode();
+        smartTable.modifyFirstNameColumn('Test');
+        smartTable.saveChanges();
+        
+      })
 
     })
 

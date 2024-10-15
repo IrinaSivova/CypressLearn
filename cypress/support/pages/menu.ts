@@ -1,16 +1,37 @@
 export class MenuSideBar {
 
-    formsItem = '//*[@data-name="edit-2"]'
-    formLayoutItem = '//span[@class="menu-title ng-tns-c141-11"]'
+    formsItem = '.menu-title'
+    formLayoutItem = '.menu-title'
+    tablesAndData = '.menu-title'
+    smartTable = '.menu-title'
+    modalAndOverlays = '.menu-title'
+    toastr = '.menu-title'
 
 
     selectMenuItem(){
-        cy.xpath(this.formsItem).should('be.visible').click();
+        cy.get(this.formsItem).contains('Forms').click();
     }
 
     selectSubMenuItem(){
-        cy.xpath(this.formLayoutItem).should('be.visible').click();
+        cy.get(this.formLayoutItem).contains('Form Layouts').click();
     }
 
+    selectMenuTableAndData(){
+        cy.get(this.tablesAndData,{timeout:6000}).contains('Tables & Data').click();
+    }
+
+    selectMenySmartTable(){
+        cy.get(this.smartTable,{timeout:6000}).contains('Smart Table').click();
+    }
+
+    selectMenuModalAndOverlays(){
+        cy.get(this.modalAndOverlays).contains('Modal & Overlays').click();
+    }
+
+    selectMenuToastr(){
+        cy.get(this.modalAndOverlays).contains('Toastr').click();
+    }
 }
+
 export default new MenuSideBar();
+
