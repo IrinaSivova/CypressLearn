@@ -1,0 +1,34 @@
+[
+  {
+    "testData": {
+      "position": "top-right",
+      "title": "test title",
+      "content": "test content",
+      "type": "primary"
+    },
+    "expectedResult": {
+      "icon": "email",
+      "color": "rgb(51, 102, 255)",
+      "position": {
+        "justifyContent": "flex-end",
+        "alignItems": "flex-start"
+      }
+    }
+  },
+  {
+    "testData": {
+      "position": "bottom-left",
+      "title": "test title",
+      "content": "test content",
+      "type": "success"
+    },
+    "expectedResult": {
+      "icon": "checkmark",
+      "color": "rgb(0, 214, 143)",
+      "position": {
+        "justifyContent": "flex-start",
+        "alignItems": "flex-end"
+      }
+    }
+  }
+]

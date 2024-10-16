@@ -1,0 +1,67 @@
+{
+  "data": {
+    "code": 1,
+    "content": {
+      "text": "sam",
+      "changedText": "sam",
+      "tpl_name": "one_plus_word",
+      "records": {
+        "words_additions": [
+          {
+            "name": "samsung",
+            "href": "https://rozetka.com.ua/ua/search/?text=samsung"
+          },
+          {
+            "name": "samsung s24",
+            "href": "https://rozetka.com.ua/ua/search/?text=samsung+s24"
+          },
+          {
+            "name": "samsung s23",
+            "href": "https://rozetka.com.ua/ua/search/?text=samsung+s23"
+          },
+          {
+            "name": "samsung galaxy",
+            "href": "https://rozetka.com.ua/ua/search/?text=samsung+galaxy"
+          },
+          {
+            "name": "samsung a55",
+            "href": "https://rozetka.com.ua/ua/search/?text=samsung+a55"
+          }
+        ],
+        "cats_searches": [
+          {
+            "id": "4634921",
+            "top_id": "1162030",
+            "name": "в категорії <span class='bold'> Чоловічі кеди</span>",
+            "href": "https://rozetka.com.ua/ua/search/?text=sam&section_id=4634921&redirected=1",
+            "category_title": "Чоловічі кеди"
+          },
+          {
+            "id": "4634489",
+            "top_id": "1162030",
+            "name": "в категорії <span class='bold'> Жіночі кеди</span>",
+            "href": "https://rozetka.com.ua/ua/search/?text=sam&section_id=4634489&redirected=1",
+            "category_title": "Жіночі кеди"
+          },
+          {
+            "id": "80095",
+            "top_id": "80253",
+            "name": "в категорії <span class='bold'> Комп'ютери, неттопи, моноблоки</span>",
+            "href": "https://rozetka.com.ua/ua/search/?text=sam&section_id=80095&redirected=1",
+            "category_title": "Комп'ютери, неттопи, моноблоки"
+          }
+        ]
+      },
+      "count": 8,
+      "total_count": 0,
+      "page": 0,
+      "start": 0,
+      "sections_menu": [],
+      "move_to_category": "Перейти в категорію",
+      "price_with_promo": "Ціна з промокодом",
+      "sudg_noth_to_find": "По вашому запиту нічого не знайдено. <nobr>Уточніть свій запит",
+      "all_find_result": "Всі результати пошуку",
+      "currency": "грн"
+    }
+  }
+}
