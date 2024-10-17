@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "cypress": "^13.15.0",
+    "read-excel-file": "^5.8.6",
     "typescript": "^5.6.3"
   },
   "devDependencies": {

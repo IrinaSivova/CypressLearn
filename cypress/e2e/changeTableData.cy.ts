@@ -11,15 +11,15 @@ describe ('Change Table Data Test', () => {
         cy.get(':nth-child(2) > nb-card-header').should('be.visible').click();
       });
 
-    it ('Change Table Data', () => {
-      
+    it('Change Table Data', () => {
+
       menuSideBar.selectMenuTableAndData();
       menuSideBar.selectMenySmartTable();
       smartTable.getThirdRow().within ( () => {
         smartTable.openEditMode();
         smartTable.modifyFirstNameColumn('Test');
         smartTable.saveChanges();
-        
+
       })
 
     })

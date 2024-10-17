@@ -32,12 +32,12 @@ describe ('Creare FormLayout', () => {
     })
 
 
-    it ('createFormLayoutTest', () => {
+    it('createFormLayoutTest', () => {
 
         menu.selectMenuItem();
         menu.selectSubMenuItem();
-      
-        // 
+
+        //
         formLayoutPage.enterRecipients('Recipient Test');
         formLayoutPage.enterSubject('Test Subject');
         formLayoutPage.enterMessage('Test Message');
