@@ -1,7 +1,7 @@
 
 import menu from "../support/pages/menu"
 import formLayoutPage  from "../support/pages/formLayout"
-import inlineForm from '../fixtures/inlineForm.json'
+//import inlineForm from "../fixtures/inlineForm.json"
 
 describe ('Creare FormLayout', () => {
 

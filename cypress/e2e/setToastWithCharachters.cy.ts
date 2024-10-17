@@ -27,11 +27,11 @@ describe ('Load Toast With Characters', () => {
         //cy.xpath('//input[@name="timeout"]').clear().type('50');
         //cy.contains('button', 'Show toast').click();
        
-        cy.get('nb-toastr-container nb-toast').then( toastContainer => {
+        cy.get('nb-toastr-container nb-toast').then( toastContainer => { // стрілкова функція з параметром (toastContainer). toastcontainer це dom element, який поверула попередня опреація
             expect(toastContainer).to.contain('HI there!')
             expect(toastContainer).to.contain(`I'm cool toaster!`)
 
-            cy.wrap(toastContainer).find(`[data-name="email"]`).should('exist');
+            cy.wrap(toastContainer).find(`[data-name="email"]`).should('exist'); // expect конвертує обєкт, тому потрібно обернути його, щоб використовувати команди cypress
             cy.wrap(toastContainer).should('have.css', 'background-color', 'rgb(98, 0, 238)')
         });
 
