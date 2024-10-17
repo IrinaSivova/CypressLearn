@@ -11,7 +11,7 @@ export class ToastSetUpPage {
 
 
 getPositionInputField() : Cypress.Chainable {
-    return cy.get('.label').contains('Position:').parent().find(this.positionButton);
+    return cy.get('nb-select.position-select');
 }
 
 getToastTypeInputFiled () {

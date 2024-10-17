@@ -1,1 +1,7 @@
 /node_modules/
+.idea
+.idea/*
+.idea/libraries
+.idea/.name
+.idea/workspace.xml
+/.idea/workspace.xml

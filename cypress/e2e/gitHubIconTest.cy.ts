@@ -11,7 +11,7 @@ describe ('GitHub Icon Test', () => {
 
     it ('GitHub Icon Test', () => {
 
-        header.findGitHubText().should('have.text', 'Star');
+        header.findGitHubText().should('have.text', 'Star'); // iframe 
         
     })
 
