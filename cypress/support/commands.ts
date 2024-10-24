@@ -35,7 +35,13 @@
 //     }
 //   }
 // }
+
 import 'cypress-xpath';
+
+
+Cypress.Commands.add('logSomeText', { prevSubject: 'element'}, (subject, options) => {
+    cy.log('logSomeText')
+})
 
 Cypress.Commands.add('getIframe', (iframeSelector: string) => {
     return cy
@@ -44,3 +50,4 @@ Cypress.Commands.add('getIframe', (iframeSelector: string) => {
       .should('not.be.empty')             // Ensure it is not empty
       .then(cy.wrap);                     // Wrap the body so that Cypress commands can be chained
   });
+

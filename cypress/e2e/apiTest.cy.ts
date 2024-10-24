@@ -26,6 +26,8 @@ it(`Create pet`, () => {
 
         petId = response.body.id
 
+        // cy.debug()
+
         cy.request({
             method: 'GET', url: `${apiUrl}/pet/${response.body.id}`
         }).then(response => {
