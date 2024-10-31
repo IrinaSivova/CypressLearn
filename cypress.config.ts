@@ -5,7 +5,7 @@ import { configureAllureAdapterPlugins } from '@mmisty/cypress-allure-adapter/pl
 
 export default defineConfig({
 
-  pageLoadTimeout: 120000,
+  pageLoadTimeout: 200000,
 
   e2e: {
     baseUrl: 'https://sanitarskyi-admin-panel-f873a4ce5323.herokuapp.com',
@@ -22,6 +22,7 @@ export default defineConfig({
       },
       allure: true
     },
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
       mysql.configurePlugin(on);
 

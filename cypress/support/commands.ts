@@ -38,7 +38,6 @@
 
 import 'cypress-xpath';
 
-
 Cypress.Commands.add('logSomeText', { prevSubject: 'element'}, (subject, options) => {
     cy.log('logSomeText')
 })
