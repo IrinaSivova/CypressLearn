@@ -77,10 +77,30 @@ it(`Update pet`, () => {
     })
 })
 
-it(`Update pet`, () => {
+it(`Get pet in order to recieve 404 error`, () => {
     cy.request({
         method: 'GET', url: `${apiUrl}/pet/123123123`, failOnStatusCode: false
     }).then(response => {
         expect(response.status).eq(404)
+    })
+})
+
+it.only (`should contain the field `, () => {
+    cy.request({
+        method: 'GET',
+        url: `${apiUrl}/pet/findByStatus`,
+        qs:{
+            status: 'available'}
+    }).then (response => {
+        console.log(response)
+        expect(response.status).to.be.equal(200);
+
+        const pets = response.body;
+        console.log(pets);
+
+        pets.forEach ((petItem: any) => {
+            expect(petItem).to.have.property('status');
+            expect(petItem.status).to.be.equal('available');
+        })
     })
 })

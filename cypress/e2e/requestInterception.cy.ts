@@ -6,4 +6,5 @@ it(`Cypress request interception`, () => {
     cy.visit('https://rozetka.com.ua/ua/')
     cy.get('input.search-form__input').type('йцу', {delay: 1000})
     cy.get('li.search-suggest__item').first().should('contain', 'sam')
+   
 })
